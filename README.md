@@ -1,31 +1,49 @@
-# **Free AI SQL & Email Assistant**
+# **AI Agent for SQL & Email Assistant**
 
-Welcome to the **Free AI SQL & Email Assistant**! This tool leverages the power of AI (Gemini) to simplify SQL query generation and professional email composition. Designed to help users interact with databases effortlessly and generate actionable insights, this open-source solution empowers you to manage data and communication seamlessly.
+Welcome to the **AI SQL & Email Assistant**! This tool leverages the power of AI (Gemini) to simplify SQL query generation and professional email composition. Designed to help users interact with databases effortlessly and generate actionable insights, this solution empowers you to manage data and communication seamlessly.
+---
+
+With no technical skills required, you can execute SQL queries and, based on the data retrieved, ask the AI to draft an email or answer questions for you.
+---
 
 ![Data Flow Diagram Whiteboard in Neon Green Pink Blue Vibrant Outlined Style](https://github.com/user-attachments/assets/7c056c2f-a268-4476-a7e9-4abb2fa8e9ed)
+Transforming complexity into clarity—your ultimate assistant for data and communication.
 
 ---
 ![DATA FROM  SQL](https://github.com/user-attachments/assets/e0204169-c43d-4513-9e2d-78037db9c2b7)
+Empowering vaious sectors and individuals to turn questions into impactful actions.
+
+---
+Ask, retrieve, act—streamlined solutions for smarter workflows.
+```
+Step 1: Input
+[User provides a question]
+      |
+      v
+Step 2: Processing
+[AI analyzes the question] --> [Generates SQL query] --> [Executes the SQL query]
+      |
+      v
+Step 3: Output
+[Retrieves data] --> [Provides an answer or drafts an email]
+
+```
 
 ## **Table of Contents**
 
 1. [Overview](#overview)
 2. [Features](#features)
 3. [Use Cases by Sector](#use-cases-by-sector)
-4. [Why Choose Free AI SQL & Email Assistant?](#why-choose-free-ai-sql--email-assistant)
+4. [Why to use this?](#why-choose-free-ai-sql--email-assistant)
 5. [Getting Started](#getting-started)
-6. [Repository Structure](#repository-structure)
-7. [System Architecture](#system-architecture)
-8. [Execution Flow](#execution-flow)
-9. [Contributions](#contributions)
-10. [License](#license)
-11. [Contact](#contact)
+6. [Execution Flow](#execution-flow)
+7. [Contact](#contact)
 
 ---
 
 ## **Overview**
 
-The **Free AI SQL & Email Assistant** is a versatile, user-friendly tool powered by AI (Gemini) to simplify SQL query generation and professional email composition. This open-source solution allows users to interact with databases effortlessly, fetch meaningful insights, and generate professional emails without requiring any prior technical expertise.
+The **AI Agent for SQL & Email Assistant** is a versatile, user-friendly tool powered by AI (Gemini) to simplify SQL query generation and professional email composition. This solution allows users to interact with databases effortlessly, fetch meaningful insights, and generate professional emails without requiring any prior technical expertise.
 
 With this tool, you can translate natural language inputs into accurate SQL queries, retrieve data from your database, and seamlessly create and send tailored emails, all from a single interface.
 
@@ -91,95 +109,9 @@ With this tool, you can translate natural language inputs into accurate SQL quer
 ---
 
 ## **Getting Started**
-
-### **Prerequisites**
-
-- Python 3.8 or higher
-- API keys for necessary integrations
-
-### **Installation**
-
-1. Clone the repository:
-   ```bash
-   git clone <repo-link>
-   ```
-
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Run the application:
-   ```bash
-   streamlit run main.py
-   ```
-
-4. Start querying and generating emails effortlessly!
+The code is still under execution. I am working to complete it, integrate it with other tools, and optimize it to prevent the AI from executing unnecessary operations.
 
 ---
-
-## **Repository Structure**
-
-```
-SQL AGENT/
-│
-├── main.py                     # Main Streamlit application script
-├── prompts.py                  # Contains custom prompts and instructions for AI agents    
-├── DB.py                       # Defines the database schema as a string (Schema_prompt)
-├── email_tool.py               # Handles email sending and draft saving   
-├── .env                        # Environment variables
-│
-├── requirements.txt            # Python dependencies (e.g., Streamlit, SQLAlchemy)
-├── README.md                   # Documentation for setting up and using the system
-└── .gitignore                  # Files and directories to ignore in version control
-```
-
----
-
-## **System Architecture**
-
-```
-+-------------------------+
-|      User Interface     |
-|  (Streamlit Frontend)   |
-+-------------------------+
-           |
-           v
-+-------------------------+
-|       Application       |
-|         Logic           |
-|   (SQL Query Generator, |
-|    Email Generator)     |
-+-------------------------+
-           |
-           v
-+-------------------------+        +-----------------------+
-| Database Interaction   |<------>|      Database         |
-|  (SQLAlchemy)          |        |  (PostgreSQL/MySQL)   |
-+-------------------------+        +-----------------------+
-           |
-           v
-+-------------------------+        +-----------------------+
-|       AI Agents         |<------>| Gemini Model (Google)|
-|  (Gemini Models via     |        |  SQL Query & Email   |
-|   Google API, Custom    |        |   Generation)        |
-|     Prompts)            |        +-----------------------+
-+-------------------------+
-           |
-           v
-+-------------------------+
-|       Email Tools       |
-|  (SMTP for Sending,     |
-|   Draft Saving Logic)   |
-+-------------------------+
-           |
-           v
-+-------------------------+
-| Environment Variables   |
-|   (.env or Streamlit    |
-|       Secrets)          |
-+-------------------------+
-```
 
 ---
 
@@ -207,20 +139,11 @@ SQL AGENT/
 +-------------------------+     +-------------------------+     +-------------------------+     
                                                                                  |
                                                                                  v
-+-------------------------+
-| User Sends Email or     |
-| Saves as Draft          |
-+-------------------------+
+                                                                  +-------------------------+
+                                                                  | User Sends Email or     |
+                                                                  | Saves as Draft          |
+                                                                  +-------------------------+
 ```
-
----
-
-## **Contributions**
-
-We welcome contributions from developers, data analysts, and enthusiasts. Whether it's adding features, fixing bugs, or improving documentation, your input is valuable. 
-
-Feel free to fork the repository, create a new branch, and submit a pull request with your changes.
-
 ---
 
 ## **License**
