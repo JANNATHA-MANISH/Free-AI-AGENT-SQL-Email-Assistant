@@ -1,7 +1,8 @@
-# **Free AI SQL & Email Assistant**
+![Data Flow Diagram Whiteboard in Neon Green Pink Blue Vibrant Outlined Style](https://github.com/user-attachments/assets/2175c116-5619-44f6-bd5b-68c26c9250fb)# **Free AI SQL & Email Assistant**
 
 Welcome to the **Free AI SQL & Email Assistant**! This tool leverages the power of AI (Gemini) to simplify SQL query generation and professional email composition. Designed to help users interact with databases effortlessly and generate actionable insights, this open-source solution empowers you to manage data and communication seamlessly.
-![Data Flow Diagram Whiteboard in Neon Green Pink Blue Vibrant Outlined Style (1980 x 1060 px)](https://github.com/user-attachments/assets/2d3579d6-46d3-498d-bd8b-88444d0d36ab)
+
+![Data Flow Diagram Whiteboard in Neon Green Pink Blue Vibrant Outlined Style (1)](https://github.com/user-attachments/assets/0a810d13-85bf-493a-8964-4d02f85f915f)
 
 ---
 
