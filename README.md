@@ -2,7 +2,7 @@
 
 Welcome to the **Free AI SQL & Email Assistant**! This tool leverages the power of AI (Gemini) to simplify SQL query generation and professional email composition. Designed to help users interact with databases effortlessly and generate actionable insights, this open-source solution empowers you to manage data and communication seamlessly.
 
-![Data Flow Diagram Whiteboard in Neon Green Pink Blue Vibrant Outlined Style (1)](https://github.com/user-attachments/assets/b0817a29-6e60-4e89-80c9-e0fe692d7f0e)
+![Uploading Data Flow Diagram Whiteboard in Neon Green Pink Blue Vibrant Outlined Style.gif…]()
 
 ---
 
