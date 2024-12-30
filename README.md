@@ -5,6 +5,7 @@ Welcome to the **Free AI SQL & Email Assistant**! This tool leverages the power 
 ![Data Flow Diagram Whiteboard in Neon Green Pink Blue Vibrant Outlined Style](https://github.com/user-attachments/assets/7c056c2f-a268-4476-a7e9-4abb2fa8e9ed)
 
 ---
+![DATA FROM  SQL](https://github.com/user-attachments/assets/e0204169-c43d-4513-9e2d-78037db9c2b7)
 
 ## **Table of Contents**
 
