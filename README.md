@@ -1,13 +1,34 @@
-# Free AI SQL & Email Assistant
+# **Free AI SQL & Email Assistant**
 
-## Description
+Welcome to the **Free AI SQL & Email Assistant**! This tool leverages the power of AI (Gemini) to simplify SQL query generation and professional email composition. Designed to help users interact with databases effortlessly and generate actionable insights, this open-source solution empowers you to manage data and communication seamlessly.
+
+---
+
+## **Table of Contents**
+
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Use Cases by Sector](#use-cases-by-sector)
+4. [Why Choose Free AI SQL & Email Assistant?](#why-choose-free-ai-sql--email-assistant)
+5. [Getting Started](#getting-started)
+6. [Repository Structure](#repository-structure)
+7. [System Architecture](#system-architecture)
+8. [Execution Flow](#execution-flow)
+9. [Contributions](#contributions)
+10. [License](#license)
+11. [Contact](#contact)
+
+---
+
+## **Overview**
+
 The **Free AI SQL & Email Assistant** is a versatile, user-friendly tool powered by AI (Gemini) to simplify SQL query generation and professional email composition. This open-source solution allows users to interact with databases effortlessly, fetch meaningful insights, and generate professional emails without requiring any prior technical expertise.
 
 With this tool, you can translate natural language inputs into accurate SQL queries, retrieve data from your database, and seamlessly create and send tailored emails, all from a single interface.
 
 ---
 
-## Key Features
+## **Features**
 
 - **Natural Language Querying**: Input plain English queries, and the AI generates precise SQL queries based on your database schema.
 - **Database Interaction**: Execute SQL queries and retrieve results in a clean, tabular format.
@@ -17,7 +38,7 @@ With this tool, you can translate natural language inputs into accurate SQL quer
 
 ---
 
-## Use Cases by Sector
+## **Use Cases by Sector**
 
 ### 1. Education
 - Automate report generation for student performance or attendance.
@@ -56,7 +77,8 @@ With this tool, you can translate natural language inputs into accurate SQL quer
 
 ---
 
-## Why Choose Free AI SQL & Email Assistant?
+## **Why Choose Free AI SQL & Email Assistant?**
+
 - **Ease of Use**: No technical expertise is required.
 - **Time-Saving**: Automates repetitive querying and email tasks.
 - **Cost-Effective**: Free and open-source solution for personal and business use.
@@ -65,7 +87,14 @@ With this tool, you can translate natural language inputs into accurate SQL quer
 
 ---
 
-## Getting Started
+## **Getting Started**
+
+### **Prerequisites**
+
+- Python 3.8 or higher
+- API keys for necessary integrations
+
+### **Installation**
 
 1. Clone the repository:
    ```bash
@@ -86,7 +115,7 @@ With this tool, you can translate natural language inputs into accurate SQL quer
 
 ---
 
-## Repository Structure
+## **Repository Structure**
 
 ```
 SQL AGENT/
@@ -104,19 +133,101 @@ SQL AGENT/
 
 ---
 
-## Contributions
+## **System Architecture**
+
+```
++-------------------------+
+|      User Interface     |
+|  (Streamlit Frontend)   |
++-------------------------+
+           |
+           v
++-------------------------+
+|       Application       |
+|         Logic           |
+|   (SQL Query Generator, |
+|    Email Generator)     |
++-------------------------+
+           |
+           v
++-------------------------+        +-----------------------+
+| Database Interaction   |<------>|      Database         |
+|  (SQLAlchemy)          |        |  (PostgreSQL/MySQL)   |
++-------------------------+        +-----------------------+
+           |
+           v
++-------------------------+        +-----------------------+
+|       AI Agents         |<------>| Gemini Model (Google)|
+|  (Gemini Models via     |        |  SQL Query & Email   |
+|   Google API, Custom    |        |   Generation)        |
+|     Prompts)            |        +-----------------------+
++-------------------------+
+           |
+           v
++-------------------------+
+|       Email Tools       |
+|  (SMTP for Sending,     |
+|   Draft Saving Logic)   |
++-------------------------+
+           |
+           v
++-------------------------+
+| Environment Variables   |
+|   (.env or Streamlit    |
+|       Secrets)          |
++-------------------------+
+```
+
+---
+
+## **Execution Flow**
+
+```
++-------------------------+     +-------------------------+     +-------------------------+     
+|     User Interface      | --> |  User Provides Query    | --> |   AI Agent (Gemini)     |
+|  (Streamlit Frontend)   |     | (e.g., "Details of      |     | Receives Input and      |
+|                         |     |  students with 70 marks")|     | Custom Schema Prompt    |
++-------------------------+     +-------------------------+     +-------------------------+     
+                                                                                 |
+                                                                                 v
++-------------------------+     +-------------------------+     +-------------------------+     
+| Gemini Processes Input  | --> | SQL Query Sent to       | --> | Results Fetched and     |
+| and Analyzes Schema to  |     |   Database for          |     |  Returned to User       |
+| Generate SQL Query      |     | Execution (SQLAlchemy)  |     |                         |
++-------------------------+     +-------------------------+     +-------------------------+     
+                                                                                 |
+                                                                                 v
++-------------------------+     +-------------------------+     +-------------------------+     
+|   AI Agent (Gemini)     | --> | Gemini Summarizes Data  | --> | Generated Email is      |
+| Receives Results and    |     | into a Professional     |     | Displayed to User for   |
+| Recipient Name          |     | Email Template with     |     | Review or Editing       |
++-------------------------+     +-------------------------+     +-------------------------+     
+                                                                                 |
+                                                                                 v
++-------------------------+
+| User Sends Email or     |
+| Saves as Draft          |
++-------------------------+
+```
+
+---
+
+## **Contributions**
+
 We welcome contributions from developers, data analysts, and enthusiasts. Whether it's adding features, fixing bugs, or improving documentation, your input is valuable. 
 
 Feel free to fork the repository, create a new branch, and submit a pull request with your changes.
 
 ---
 
-## License
+## **License**
+
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ---
 
-## Contact
+## **Contact**
+
 For any queries or support, please open an issue on the GitHub repository or contact the repository maintainer directly.
 
 ---
