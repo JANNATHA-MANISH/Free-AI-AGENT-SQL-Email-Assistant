@@ -2,7 +2,7 @@
 
 Welcome to the **AI SQL & Email Assistant**! This tool leverages the power of AI to simplify SQL query generation and professional email composition. Designed to help users interact with databases effortlessly and generate actionable insights, this solution empowers you to manage data and communication seamlessly.
 
-##**With no technical skills required, you can execute SQL queries and, based on the data retrieved, ask the AI to draft an email or answer questions for you.**
+**With no technical skills required, you can execute SQL queries and, based on the data retrieved, ask the AI to draft an email or answer questions for you.**
 
 ![Data Flow Diagram Whiteboard in Neon Green Pink Blue Vibrant Outlined Style](https://github.com/user-attachments/assets/7c056c2f-a268-4476-a7e9-4abb2fa8e9ed)
 ###Transforming complexity into clarity—your ultimate assistant for data and communication.
